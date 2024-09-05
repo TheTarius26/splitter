@@ -28,11 +28,13 @@ class _HomeScreenState extends State<HomeScreen> {
             child: SliverList(
               delegate: SliverChildListDelegate([
                 TextFormField(
+                  controller: _billAmountController,
                   decoration: const InputDecoration(
                     labelText: 'Bill Amount',
                   ),
                 ),
                 TextFormField(
+                  controller: _numberOfPeopleController,
                   decoration: const InputDecoration(
                     labelText: 'Number of People',
                   ),
